@@ -1,0 +1,21 @@
+.thumb {
+    padding: 5px;
+    font-size: 10px;
+}
+
+.bord {
+    padding: 5px;
+    height: 100%;
+
+}
+
+.card {
+    width: calc((100% / 12) * 4 - 20px);
+    margin: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}

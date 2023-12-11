@@ -18,7 +18,25 @@ Route::get('/', function () {
 });
 
 Route::get('/comics', function () {
-    $prova = 'cia000000000000000000000o';
+    return view('partials.comics');
+});
+
+Route::get('/header', function () {
+    return view('partials.header');
+});
+
+Route::get('/main', function () {
+
+    return view('partials.main',);
+});
+
+Route::get('/footer', function () {
+
+    return view('partials.footer',);
+});
+
+
+Route::get('/final', function () {
     $thumbs = [
         [
             "title" => "Action Comics #1000: The Deluxe Edition",
@@ -129,18 +147,5 @@ Route::get('/comics', function () {
             "type" => "graphic novel",
         ]
     ];
-    return view('comics', compact('prova', 'thumbs'));
-});
-
-Route::get('/header', function () {
-    return view('partials.header');
-});
-
-Route::get('/main', function () {
-    return view('partials.main');
-});
-
-
-Route::get('/footer', function () {
-    return view('partials.footer');
+    return view('final-page', compact('thumbs'));
 });

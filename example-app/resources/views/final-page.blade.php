@@ -14,9 +14,6 @@
     @endsection
     @include('partials.main')
     @section('main')
-    @foreach ($thumbs as $key => $value)
-    <p>{{$key}}</p>
-    @endforeach
     @endsection
     @include('partials.footer')
     @section('footer')

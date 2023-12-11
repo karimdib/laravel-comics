@@ -1,3 +1,4 @@
+@vite('resources/js/app.js')
 <footer>
     <ul>
         <li>Chi siamo</li>
