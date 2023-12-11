@@ -9,10 +9,19 @@
 </head>
 
 <body>
-    <h1>Fumetti</h1>
-    <section>
+    @include('partials.header')
+    @section('header')
+    @endsection
+    @include('partials.main')
+    @section('main')
+    @foreach ($thumbs as $key => $value)
+    <p>{{$key}}</p>
+    @endforeach
+    @endsection
+    @include('partials.footer')
+    @section('footer')
+    @endsection
 
-    </section>
 </body>
 
 </html>
