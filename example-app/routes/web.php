@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welocome');
 });
 
 Route::get('/comics', function () {
@@ -35,8 +35,13 @@ Route::get('/footer', function () {
     return view('partials.footer',);
 });
 
+Route::get('/base', function () {
 
-Route::get('/final', function () {
+    return view('base');
+});
+
+
+Route::get('/home', function () {
     $thumbs = [
         [
             "title" => "Action Comics #1000: The Deluxe Edition",
@@ -147,5 +152,5 @@ Route::get('/final', function () {
             "type" => "graphic novel",
         ]
     ];
-    return view('final-page', compact('thumbs'));
+    return view('home', compact('thumbs'));
 });
