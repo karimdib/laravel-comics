@@ -13,7 +13,7 @@
 
     @include('partials.main')
     @section('main')
-
+    @endsection
     @include('partials.footer')
     @section('footer')
     @endsection
