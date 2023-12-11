@@ -9,10 +9,10 @@
 </head>
 
 <body>
-    @include('partials.header')
-    @include('partials.hero')
-    @yield('content')
-    @include('partials.footer')
+    <h1>ciao questa è una prova</h1>
+    @foreach ($perle as $key => $values)
+    <p>{{$values['nome']}}</p>
+    @endforeach
 </body>
 
 </html>

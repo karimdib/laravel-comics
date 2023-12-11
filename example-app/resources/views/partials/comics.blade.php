@@ -1,11 +1,14 @@
 <div class="row">
-    @foreach ($thumbs as $keys => $values)
+    @foreach ($arrays as $keys => $values)
     <div class="card">
         <div class="bord">
-            @foreach ($values as $key =>$value)
-            <div class="thumb">{{$value}}</div>
-            @endforeach
+            <img class="thumb" src="{{$values['thumb']}}" alt="">
+            <ul class="detalis-comics">
+                <li class="title-thumb">{{$values['title']}}</li>
+                <li>{{$values['price']}}</li>
+            </ul>
         </div>
+        <div class="layout-filter"></div>
     </div>
     @endforeach
 </div>

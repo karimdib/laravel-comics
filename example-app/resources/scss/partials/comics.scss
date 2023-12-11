@@ -1,10 +1,4 @@
-.thumb {
-    padding: 5px;
-    font-size: 10px;
-}
-
 .bord {
-    padding: 5px;
     height: 100%;
 
 }
@@ -12,10 +6,39 @@
 .card {
     width: calc((100% / 12) * 4 - 20px);
     margin: 10px;
+    z-index: 50;
+
+    .thumb:hover {
+        z-index: 4;
+    }
+
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+}
+
+.thumb {
+    width: 100%;
+    height: 100%;
+    z-index: 60;
+    position: relative;
+}
+
+.detalis-comics {
+    position: absolute;
+    z-index: 50;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.layout-filter {
+    position: absolute;
+    z-index: 49;
+    background-color: rgba(0, 0, 0, 0.5);
+    inset: 0;
 }
